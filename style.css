@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Dark-gray: hsl(0, 0%, 59%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+}
+.container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Dark-cyan);
+  width: 100%;
+  height: 100vh;
+}
+.container img {
+  position: absolute;
+}
+.img-top {
+  top: -650px;
+  left: -20%;
+}
+.img-bottom {
+  bottom: -650px;
+  right: -20%;
+}
+.card {
+  position: relative;
+  z-index: 100;
+  background-color: #ffff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 5%;
+  width: 370px;
+  height: 400px;
+}
+.bg-pattern {
+  width: 100%;
+  height: 35%;
+}
+.bg-pattern img {
+  display: block;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+}
+.card-img {
+  position: relative;
+  display: flex;
+  background-color: #ffff;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 170px;
+  margin-bottom: 15px;
+  /* border:solid 1px brown; */
+}
+.card-img img {
+  border-radius: 50%;
+  width: 100px;
+}
+.card-name {
+  position: relative;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 35%;
+  /* border: solid 1px green; */
+}
+.card-name span {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+  /* border: solid 1px blueviolet; */
+}
+.card-name span p {
+  margin-left: 10px;
+  font-size: 1rem;
+  color: var(--Dark-grayish-blue);
+}
+.card-name p {
+  font-size: 0.8rem;
+  color: var(--Dark-grayish-blue);
+}
+.line {
+  display: block;
+  width: 100%;
+  color: var(--Very-dark-desaturated-blue);
+  opacity: .2;
+}
+.numbers {
+  position: relative;
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.numbers span p {
+  letter-spacing: 0.12rem;
+  font-size: 0.7rem;
+  color: var(--Dark-grayish-blue);
+}
+@media screen and (max-width: 375px) {
+   .card {
+    /* display: none; */
+    width: 330px;
+    height: 390px;
+    }
+
+   .img-top {
+    top: -80%;
+    left: -200%;
+   }
+   .img-bottom {
+    bottom: -80%;
+    right: -200%; 
+   }
+   .bg-pattern {
+    width: 100%;
+    height: 27%;
+  }
+}
