@@ -17,37 +17,39 @@
     <div class="container">
       <img class="img-top" src="./img/bg-pattern-top.svg" alt="" />
       <img class="img-bottom" src="./img/bg-pattern-bottom.svg" alt="" />
-      <div class="card">
-        <div class="bg-pattern">
-          <img src="./img/bg-pattern-card.svg" alt="" />
-        </div>
-        <div class="card-img">
-          <img src="./img/image-victor.jpg" alt="logo" />
-        </div>
-        <div class="card-name">
-          <span
-            ><h2>Victor Crest</h2>
-            <p>26</p></span
-          >
-          <p>London</p>
-        </div>
-        <div class="line"><hr /></div>
-        <div class="numbers">
-          <span>
-            <h2>80K</h2>
-            <p>Followers</p>
-          </span>
-          <span>
-            <h2>803K</h2>
-            <p>Likes</p>
-          </span>
-          <span>
-            <h2>1.4K</h2>
-            <p>Photos</p>
-          </span>
-        </div>
-      </div>
+      <div class="card"></div>
+      <button id="random">Random</button>
     </div>
+    <template class="template-card">
+      <div class="bg-pattern">
+        <img src="./img/bg-pattern-card.svg" alt="" />
+      </div>
+      <div class="card-img">
+        <img src="./img/image-victor.jpg" alt="logo" />
+      </div>
+      <div class="card-name">
+        <span>
+          <h2 id="name-title">Victor Crest</h2>
+          <p id="name-id">26</p>
+        </span>
+        <p id="name-exp">London</p>
+      </div>
+      <div class="line"><hr /></div>
+      <div class="numbers">
+        <span>
+          <h2 id="speed">80K</h2>
+          <p>Velocidad</p>
+        </span>
+        <span>
+          <h2 id="defense">803K</h2>
+          <p>Defensa</p>
+        </span>
+        <span>
+          <h2 id="attack">1.4K</h2>
+          <p>Ataque</p>
+        </span>
+      </div>
+    </template>
     <script src="./app.js"></script>
   </body>
 </html>
